@@ -25,6 +25,7 @@ class CreateCandidatesOutput(BaseModel):
 
 
 class CreateResponse(BaseModel):
+    response_id: str
     input_text: str
     completions: list[CreateCandidatesOutput]
 
