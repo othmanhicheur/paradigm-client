@@ -22,6 +22,7 @@ class CreateCandidatesOutput(BaseModel):
     output_text: str
     log_probs: LogProbs | None
     finish_reason: FinishReason
+    completion_id: str
 
 
 class CreateResponse(BaseModel):
