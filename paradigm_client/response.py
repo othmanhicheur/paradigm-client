@@ -22,11 +22,11 @@ class CreateCandidatesOutput(BaseModel):
     output_text: str
     log_probs: LogProbs | None
     finish_reason: FinishReason
-    completion_id: str
+    completion_id: str | None
 
 
 class CreateResponse(BaseModel):
-    response_id: str
+    response_id: str | None
     input_text: str
     completions: list[CreateCandidatesOutput]
 
